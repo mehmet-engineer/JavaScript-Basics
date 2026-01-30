@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to my page</title>
+    </head>
+
+    <body>
+        <h1>Heading</h1>
+        <p>Callback function example...</p>
+        <p id="p1">Use mouse to change power</p>
+        <img id="img" src="../assets/power_off.png" onmouseover="power_on()" onmouseout="power_off()">
+
+        <script>
+            let img_obj = document.getElementById("img");
+            
+            function power_on() {
+                img_obj.src = "../assets/power_on.png";
+            }
+
+            function power_off() {
+                img_obj.src = "../assets/power_off.png";
+            }
+        </script>
+
+    </body>
+</html>
